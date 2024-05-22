@@ -13,6 +13,12 @@ namespace Telephone
             return heardWord;
         }
 
+        public static int GetRandomNumber()
+        {
+            Random random = new Random();
+            int randomNumberFrom1To10 = new Random().Next(1, 11);
+            return randomNumberFrom1To10;
+        }
         public static string ScrambleWord(string heardWord)
         {
             string scrambledWord = "hoseu";
