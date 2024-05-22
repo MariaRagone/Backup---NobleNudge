@@ -21,8 +21,20 @@ namespace Telephone
         }
         public static string ScrambleWord(string heardWord)
         {
-            string scrambledWord = "hoseu";
-            return scrambledWord;
+            char[] characters = heardWord.ToCharArray();
+
+           int randomNumber = GetRandomNumber();
+
+            for (int i = characters.Length - 1; i > 0; i--)
+            {
+                int j = GetRandomNumber();
+                char temp = characters[i];
+                characters[i] = characters[j];
+                characters[j] = temp;
+            }
+
+            string result = new string(characters);
+            return result;
         }
 
     }
