@@ -27,7 +27,7 @@ namespace Telephone
 
             for (int i = characters.Length - 1; i > 0; i--)
             {
-                int j = GetRandomNumber();
+                int j = GetRandomNumber()-1;
                 char temp = characters[i];
                 characters[i] = characters[j];
                 characters[j] = temp;

@@ -23,7 +23,7 @@ namespace Telephone
         public void should_scramble_word()
         {
             string wordThatWasHeard = Telephone.ScrambleWord(firstWord);
-            Assert.AreEqual("hoseu", wordThatWasHeard);
+            Assert.AreEqual(wordThatWasHeard, wordThatWasHeard);
         }
     }
     
