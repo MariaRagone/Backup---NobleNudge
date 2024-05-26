@@ -23,11 +23,12 @@ namespace Telephone
         {
             char[] characters = heardWord.ToCharArray();
 
-           int randomNumber = GetRandomNumber();
+
+        int randomNumber = GetRandomNumber();
 
             for (int i = characters.Length - 1; i > 0; i--)
             {
-                int j = GetRandomNumber()-1;
+                int j = randomNumber;  
                 char temp = characters[i];
                 characters[i] = characters[j];
                 characters[j] = temp;
